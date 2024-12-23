@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A survey form for collecting user information">
+    <title>Epic Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Epic Form</h1>
+        <p id="description">Thanks for the help</p>    
+    </header>
+    <main>
+        <form action="" id="survey-form">
+            <!-- User Information Section -->
+            <section>
+                <label id="name-label" for="name">Name: 
+                    <input class="input-form" placeholder="Ricardo" id="name" type="text" name="name" required aria-label="Enter your name">
+                </label>
+                <label id="email-label" for="email">Email: 
+                    <input class="input-form" placeholder="Ricardo@gmail.com" id="email" type="email" name="email" required aria-label="Enter your email">
+                </label>
+                <label id="number-label" for="number">Number: 
+                    <input class="input-form" placeholder="3184949029" id="number" type="number" name="number" required aria-label="Enter your phone number" max="10" min="10">
+                </label>
+            </section>
+            
+            <!-- City Selection Section -->
+            <section>
+                <label id="city-label" for="city">City: 
+                    <select name="dropdown" id="dropdown" required aria-label="Select your city">
+                        <option value="select">Select an option</option>
+                        <option value="Medellin">Medellin</option>
+                        <option value="Bogota">Bogota</option>
+                    </select>
+                </label>
+            </section>
+            
+            <!-- Gender Selection Section -->
+            <section>
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <label id="gender-label" for="man">
+                        <input type="radio" name="gender" id="man" value="man" checked> Man
+                    </label>
+                    <label id="gender-label" for="women">
+                        <input type="radio" name="gender" id="women" value="women"> Women
+                    </label>
+                </fieldset>
+            </section>
+            
+            <!-- Checkbox Section-->
+             <section>
+                <fieldset>
+                    <legend>What's your favorite candy?</legend>
+                    <label for="favorite-candy">
+                        <input type="checkbox" name="bonbombum" id="favorite-candy" value="candy" > bonbombum
+                    </label>
+                    <label for="favorite-candy">
+                        <input type="checkbox" name="trululu" id="favorite-candy" value="candy" > trululu
+                    </label>
+                    <label for="favorite-candy">
+                        <input type="checkbox" name="fruna" id="favorite-candy" value="candy" > fruna
+                    </label>
+                </fieldset>
+             </section>
+
+            <!-- Open Question Section -->
+            <section>
+                <label for="question">What do you expect from the project? 
+                    <textarea name="question" id="question" placeholder="Write your answer here..." required aria-label="What do you expect from the project"></textarea>
+                </label>
+            </section>
+            
+            <!-- Submit Button -->
+            <section>
+                <button type="submit" id="submit">Submit</button>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
